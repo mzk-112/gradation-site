@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
- <link rel="stylesheet" href="style.css">
-  <title>Class of 2027</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class of 2027</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>SENBOKU HIGH SCHOOL</h1>
-  <h2>CLASS OF 2027</h2>
+
+  <main>
+    <p>SENBOKU HIGH SCHOOL</p>
+
+    <h1>CLASS OF 2027</h1>
+
+    <div class="days" id="days">0</div>
+
+    <p class="since">DAYS SINCE WE GRADUATED</p>
+
+    <p class="date">2027.02.26</p>
+  </main>
+
+  <script>
+    const graduationDay = new Date("2027-02-26T00:00:00");
+    const today = new Date();
+
+    const difference = today - graduationDay;
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+    document.getElementById("days").textContent = days;
+  </script>
+
 </body>
 </html>
