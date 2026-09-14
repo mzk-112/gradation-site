@@ -177,3 +177,15 @@ h1 {
     height: 240px;
   }
 }
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.photo-grid img {
+  width: 100% !important;
+  height: 240px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
