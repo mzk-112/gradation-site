@@ -1,18 +1,25 @@
-{
+  {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
   background: #111;
   color: #f5f5f5;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* 最初の画面 */
+/* =========================
+   FIRST SCREEN
+========================= */
+
 main {
+  width: 100%;
   min-height: 100vh;
-  padding: 70px 20px 80px;
+  padding: 50px 20px 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,315 +28,93 @@ main {
 }
 
 /* 学校名 */
+
 main > p:first-child {
   font-size: 11px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   margin: 0 0 35px;
   opacity: 0.65;
 }
 
 /* CLASS OF 2027 */
+
 h1 {
   font-size: 25px;
   font-weight: 400;
-  letter-spacing: 7px;
-  margin: 0 0 55px;
+  letter-spacing: 5px;
+  margin: 0 0 45px;
 }
 
-/* 卒業してからの日数 ← 主役！！ */
+/* =========================
+   DAYS
+========================= */
+
 .days {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(120px, 34vw, 220px);
-  font-weight: 200;
-  line-height: 0.8;
-  letter-spacing: -8px;
+  font-size: 32vw;
+  font-weight: 300;
+  line-height: 0.85;
+  letter-spacing: -6px;
   margin: 0;
 }
 
-/* DAYS SINCE */
+/* DAYS SINCE WE GRADUATED */
+
 .since {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
-  letter-spacing: 4px;
-  margin: 35px 0 20px;
-  opacity: 0.6;
+  letter-spacing: 3px;
+  margin: 25px 0 18px;
+  opacity: 0.65;
 }
 
 /* 卒業日 */
+
 .date {
   font-size: 12px;
-  letter-spacing: 4px;
-  opacity: 0.65;
+  letter-spacing: 3px;
   margin: 0;
+  opacity: 0.7;
 }
-
 
 /* =========================
    MEMORIES
 ========================= */
 
 .memories {
-  background: #111;
-  padding: 90px 0 100px;
+  width: 100%;
+  margin: 0;
+  padding: 70px 0 0;
   text-align: center;
 }
 
-/* MEMORIES */
 .memories h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   margin: 0 20px 22px;
 }
 
-/* 説明文 */
 .memory-text {
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 1px;
   opacity: 0.55;
-  margin: 0 20px 45px;
+  margin: 0 20px 30px;
 }
 
-/* コラージュ */
+/* =========================
+   PHOTO
+========================= */
+
 .photo-grid {
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* コラージュ画像 */
 .photo-grid img {
-  width: 100%;
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
   height: auto;
-  display: block;
-}
-
-
-/* スマホ */
-@media (max-width: 600px) {
-
-  main {
-    padding: 50px 16px 70px;
-  }
-
-  h1 {
-    font-size: 22px;
-    letter-spacing: 5px;
-    margin-bottom: 55px;
-  }
-
-  .days {
-    font-size: 36vw;
-  }
-
-  .since {
-    font-size: 9px;
-    letter-spacing: 3px;
-    margin-top: 32px;
-  }
-
-  .memories {
-    padding-top: 75px;
-  }
-
-  .memories h2 {
-    font-size: 27px;
-    letter-spacing: 7px;
-  }
-
-  .memory-text {
-    font-size: 11px;
-    margin-bottom: 35px;
-  }
-
-  .photo-grid img {
-    width: 100%;
-  }
-}
-/* コラージュ画像の最終設定 */
-.photo-grid {
-  width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.photo-grid img {
-  width: 100% !important;
-  height: auto !important;
-  max-width: 100% !important;
-  display: block;
-  object-fit: contain !important;
       }
-/* ===== スマホ用 最終調整 ===== */
-
-@media (max-width: 600px) {
-
-  main {
-    min-height: 100vh;
-    padding: 50px 20px 70px;
-  }
-
-  /* 学校名 */
-  main > p:first-child {
-    font-size: 11px;
-    letter-spacing: 4px;
-    margin-bottom: 35px;
-  }
-
-  /* CLASS OF 2027 */
-  h1 {
-    font-size: 25px;
-    letter-spacing: 5px;
-    margin-bottom: 45px;
-  }
-
-  /* 卒業してからの日数 ★主役★ */
-  .days {
-    font-size: 32vw;
-    font-weight: 300;
-    line-height: 0.9;
-    letter-spacing: -5px;
-    margin: 0;
-  }
-
-  /* DAYS SINCE WE GRADUATED */
-  .since {
-    font-size: 10px;
-    letter-spacing: 3px;
-    margin-top: 25px;
-    margin-bottom: 18px;
-  }
-
-  /* 卒業日 */
-  .date {
-    font-size: 12px;
-    letter-spacing: 3px;
-  }
-
-  /* MEMORIES */
-  .memories {
-    padding: 70px 0 0;
-    text-align: center;
-  }
-
-  .memories h2 {
-    font-size: 25px;
-    letter-spacing: 6px;
-  }
-
-  .memory-text {
-    font-size: 11px;
-    margin-bottom: 30px;
-  }
-
-  /* 写真をスマホの横幅いっぱいに */
-  .photo-grid {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .photo-grid img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-  }
-
-}
-/* ===== スマホ表示 最終調整 ===== */
-
-@media screen and (max-width: 600px) {
-
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  /* 最初の画面 */
-  main {
-    width: 100%;
-    min-height: 100vh;
-    padding: 50px 20px 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  /* 学校名 */
-  main > p:first-child {
-    font-size: 11px;
-    letter-spacing: 4px;
-    margin: 0 0 35px;
-  }
-
-  /* CLASS OF 2027 */
-  h1 {
-    font-size: 25px;
-    letter-spacing: 5px;
-    margin: 0 0 40px;
-  }
-
-  /* 卒業してからの日数 */
-  .days {
-    font-size: 32vw !important;
-    line-height: 0.9;
-    font-weight: 300;
-    letter-spacing: -5px;
-    margin: 0 !important;
-  }
-
-  /* DAYS SINCE WE GRADUATED */
-  .since {
-    font-size: 10px;
-    letter-spacing: 3px;
-    margin: 25px 0 18px;
-  }
-
-  .date {
-    font-size: 12px;
-    letter-spacing: 3px;
-    margin: 0;
-  }
-
-  /* MEMORIES */
-  .memories {
-    width: 100%;
-    margin: 0;
-    padding: 70px 0 0 !important;
-    text-align: center;
-  }
-
-  .memories h2 {
-    font-size: 25px;
-    letter-spacing: 6px;
-    margin: 0 20px 22px;
-  }
-
-  .memory-text {
-    font-size: 11px;
-    margin: 0 20px 30px;
-  }
-
-  /* 写真を画面の横幅ぴったりにする */
-  .photo-grid {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .photo-grid img {
-    display: block;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-}
