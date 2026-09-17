@@ -238,3 +238,98 @@ h1 {
   }
 
 }
+/* ===== スマホ表示 最終調整 ===== */
+
+@media screen and (max-width: 600px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* 最初の画面 */
+  main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* 学校名 */
+  main > p:first-child {
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin: 0 0 35px;
+  }
+
+  /* CLASS OF 2027 */
+  h1 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin: 0 0 40px;
+  }
+
+  /* 卒業してからの日数 */
+  .days {
+    font-size: 32vw !important;
+    line-height: 0.9;
+    font-weight: 300;
+    letter-spacing: -5px;
+    margin: 0 !important;
+  }
+
+  /* DAYS SINCE WE GRADUATED */
+  .since {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin: 25px 0 18px;
+  }
+
+  .date {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 0;
+  }
+
+  /* MEMORIES */
+  .memories {
+    width: 100%;
+    margin: 0;
+    padding: 70px 0 0 !important;
+    text-align: center;
+  }
+
+  .memories h2 {
+    font-size: 25px;
+    letter-spacing: 6px;
+    margin: 0 20px 22px;
+  }
+
+  .memory-text {
+    font-size: 11px;
+    margin: 0 20px 30px;
+  }
+
+  /* 写真を画面の横幅ぴったりにする */
+  .photo-grid {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .photo-grid img {
+    display: block;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+}
