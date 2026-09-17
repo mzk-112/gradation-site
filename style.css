@@ -118,3 +118,31 @@ h1 {
   margin: 0;
   padding: 0;
       }
+@media (max-width: 600px) {
+
+  .memories {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .memories h2,
+  .memory-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .photo-grid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-grid img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+
+}
