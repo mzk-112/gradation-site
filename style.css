@@ -160,3 +160,81 @@ h1 {
   display: block;
   object-fit: contain !important;
       }
+/* ===== スマホ用 最終調整 ===== */
+
+@media (max-width: 600px) {
+
+  main {
+    min-height: 100vh;
+    padding: 50px 20px 70px;
+  }
+
+  /* 学校名 */
+  main > p:first-child {
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+  }
+
+  /* CLASS OF 2027 */
+  h1 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-bottom: 45px;
+  }
+
+  /* 卒業してからの日数 ★主役★ */
+  .days {
+    font-size: 32vw;
+    font-weight: 300;
+    line-height: 0.9;
+    letter-spacing: -5px;
+    margin: 0;
+  }
+
+  /* DAYS SINCE WE GRADUATED */
+  .since {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+  }
+
+  /* 卒業日 */
+  .date {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  /* MEMORIES */
+  .memories {
+    padding: 70px 0 0;
+    text-align: center;
+  }
+
+  .memories h2 {
+    font-size: 25px;
+    letter-spacing: 6px;
+  }
+
+  .memory-text {
+    font-size: 11px;
+    margin-bottom: 30px;
+  }
+
+  /* 写真をスマホの横幅いっぱいに */
+  .photo-grid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-grid img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+}
