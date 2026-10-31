@@ -1,4 +1,4 @@
-{
+*{
   box-sizing: border-box;
 }
 
@@ -39,7 +39,7 @@ h1 {
 
 .counter span {
   display: block;
-  font-size: 30vw;
+  font-size: 38vw;
   line-height: 1;
   font-weight: 300;
   letter-spacing: -3px;
@@ -76,6 +76,12 @@ h1 {
   font-size: 11px;
   opacity: 0.6;
   margin: 0 15px 25px;
+}
+
+.memories {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .memories img {
