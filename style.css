@@ -81,11 +81,7 @@ h1 {
 .memories img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
+  margin: 0;
 }
-<section class="memories">
-  <h2>MEMORIES</h2>
-  <p class="memory-text">A collection of moments we never want to forget.</p>
-
-  <img src="mycollages-2026-10-31_18-14-25.jpg" alt="Our memories">
-</section>
