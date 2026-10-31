@@ -13,8 +13,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* メイン画面 */
-
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -27,8 +25,6 @@ body {
   text-align: center;
 }
 
-/* 学校名 */
-
 .school {
   font-size: 11px;
   letter-spacing: 3px;
@@ -36,16 +32,12 @@ body {
   margin: 0 0 30px;
 }
 
-/* クラス名 */
-
 h1 {
-  font-size: 11px;
+  font-size: 22px;
   font-weight: 400;
   letter-spacing: 4px;
   margin: 0 0 35px;
 }
-
-/* 日数カウント */
 
 .counter {
   width: 100%;
@@ -53,14 +45,12 @@ h1 {
 
 .counter span {
   display: block;
-  font-size: 22px;
+  font-size: 38vw;
   font-weight: 300;
   line-height: 0.9;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   white-space: nowrap;
 }
-
-/* カウントの説明 */
 
 .counter p {
   font-size: 10px;
@@ -68,8 +58,6 @@ h1 {
   opacity: 0.65;
   margin: 20px 0 0;
 }
-
-/* 卒業日 */
 
 .date {
   font-size: 12px;
