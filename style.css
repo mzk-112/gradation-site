@@ -39,7 +39,7 @@ body {
 /* クラス名 */
 
 h1 {
-  font-size: 22px;
+  font-size: 11px;
   font-weight: 400;
   letter-spacing: 4px;
   margin: 0 0 35px;
@@ -53,7 +53,7 @@ h1 {
 
 .counter span {
   display: block;
-  font-size: 45vw;
+  font-size: 22px;
   font-weight: 300;
   line-height: 0.9;
   letter-spacing: -5px;
