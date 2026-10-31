@@ -53,10 +53,10 @@ h1 {
 
 .counter span {
   display: block;
-  font-size: clamp(100px, 38vw, 250px);
+  font-size: 45vw;
   font-weight: 300;
-  line-height: 0.95;
-  letter-spacing: -4px;
+  line-height: 0.9;
+  letter-spacing: -5px;
   white-space: nowrap;
 }
 
