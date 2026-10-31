@@ -83,3 +83,9 @@ h1 {
   width: 100%;
   height: auto;
 }
+<section class="memories">
+  <h2>MEMORIES</h2>
+  <p class="memory-text">A collection of moments we never want to forget.</p>
+
+  <img src="memory1.jpg" alt="Our memories">
+</section>
