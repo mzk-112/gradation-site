@@ -6,35 +6,50 @@
   <title>CLASS OF 2027</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <main class="hero">
     <p class="school">SENBOKU HIGH SCHOOL</p>
+
     <h1>CLASS OF 2027</h1>
 
     <div class="counter">
       <span id="days">0</span>
-      <p>DAYS SINCE WE GRADUATED</p>
+      <p id="counter-label">DAYS UNTIL WE GRADUATE</p>
     </div>
 
     <p class="date">2027.02.26</p>
   </main>
 
-  <section class="memories">
-  <h2>MEMORIES</h2>
-  <p class="memory-text">A collection of moments we never want to forget.</p>
-
-  <img src="mycollages-2026-10-31_18-14-25.jpg" alt="Our memories">
-  </section>
-
   <script>
     const graduationDay = new Date("2027-02-26T00:00:00");
     const today = new Date();
-    const difference = today - graduationDay;
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-    document.getElementById("days").textContent =
-      days >= 0 ? days : Math.abs(days);
+    const todayDate = new Date(
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate()
+    );
+
+    const graduationDate = new Date(
+      graduationDay.getFullYear(),
+      graduationDay.getMonth(),
+      graduationDay.getDate()
+    );
+
+    const difference = graduationDate - todayDate;
+    const days = Math.floor(Math.abs(difference) / (1000 * 60 * 60 * 24));
+
+    document.getElementById("days").textContent = days;
+
+    if (difference >= 0) {
+      document.getElementById("counter-label").textContent =
+        "DAYS UNTIL WE GRADUATE";
+    } else {
+      document.getElementById("counter-label").textContent =
+        "DAYS SINCE WE GRADUATED";
+    }
   </script>
 
 </body>
